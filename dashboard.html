@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | NexAuth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-body">
+
+<div class="dashboard-layout">
+
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">⬢</div>
+            NexAuth
+        </div>
+
+        <nav class="menu">
+            <div class="menu-item active">Dashboard</div>
+            <div class="menu-item">Notifications</div>
+            <div class="menu-item">Settings</div>
+        </nav>
+
+        <button class="logout-link" onclick="logout()">Logout</button>
+    </aside>
+
+    <main class="main-content">
+        <div class="top-bar">
+            <div>
+                <h1 id="greeting">Welcome</h1>
+                <p class="subtitle">Here's what's happening with your account today.</p>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card card-purple">
+                <h3>Profile Details</h3>
+                <p>Manage your personal information</p>
+            </div>
+
+            <div class="card">
+                <h3>Security Status</h3>
+                <p>Your account security overview</p>
+                <div class="status active">Account Active</div>
+            </div>
+        </div>
+    </main>
+
+</div>
+
+<script src="js/session.js"></script>
+</body>
+</html>

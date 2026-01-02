@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | NexAuth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-dark">
+
+<div class="auth-wrapper">
+    <div class="auth-glass">
+
+        <div class="auth-icon">→</div>
+
+        <h2>Welcome Back</h2>
+        <p class="auth-subtitle">Enter your credentials to access your account</p>
+
+        <form id="loginForm">
+
+            <div class="input-group">
+                <label>Email Address</label>
+                <div class="input-box">
+                    <span>@</span>
+                    <input type="email" id="loginEmail">
+                </div>
+                <small class="error"></small>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <div class="input-box">
+                    <span>🔒</span>
+                    <input type="password" id="loginPassword">
+                </div>
+                <small class="error"></small>
+            </div>
+
+            <button class="auth-btn" type="submit">Sign In</button>
+
+            <p class="auth-switch">
+                Don't have an account?
+                <a href="register.html">Create one</a>
+            </p>
+
+        </form>
+    </div>
+</div>
+
+<script src="js/auth.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/session.js"></script>
+</body>
+</html>
